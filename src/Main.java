@@ -42,6 +42,7 @@ public static void main(String[] args) {
             System.out.println("4. Clean");
             System.out.println("5. Attack");
             System.out.println("6. Exit");
+            System.out.println("7. Dance");
 
             opcion = teclat.Teclat.llegirInt();
 
@@ -90,11 +91,13 @@ public static void main(String[] args) {
                         contador++;
                     }
                 }
-
                 System.out.println("\n--- ESTADISTICAS DESPUES DEL ATAQUE ---");
                 dummy.mostrarEstadisticas();
 
-            } else if (opcion == 6) {
+            } else if (opcion == 7){
+                mascota.bailar();
+            }
+            if (opcion == 6) {
                 juegoActivo = false;
 
             } else {

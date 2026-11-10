@@ -40,6 +40,11 @@ public class mascota {
         }
     }
 
+    public void bailar() {
+        System.out.println(this.nom + " está bailando un mambo! 💃🕺");
+        this.energia -= 10;
+    }
+
     public void play(){
         this.energia=energia - 20;
         this.peso=peso - 10;
